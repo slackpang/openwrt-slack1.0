@@ -12,6 +12,11 @@ on:
     - cron: 0 20 * * *
   release:
     types: [published]
+    inputs:
+      ssh:
+        description: 'SSH connection to Actions'
+        required: false
+        default: 'false'
 
 jobs:
 
